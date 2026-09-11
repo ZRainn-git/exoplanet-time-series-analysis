@@ -2,6 +2,10 @@
 
 Time-series analysis of NASA Kepler light curves using signal-processing techniques to identify periodic transit signatures and estimate exoplanet orbital periods.
 
+**[View the analysis notebook](notebook/exoplanet_time_series_analysis.ipynb)**  
+**[Read the full project report](report/Time-Series%20Analysis%20of%20Confirmed%20Exoplanet%20Light%20Curves.pdf)**
+
+
 This project investigates how different time-series methods perform on exoplanet light curves with varying levels of noise and signal structure. Rather than applying a single method to every target, I used the characteristics of each light curve to guide the choice of filtering and period-estimation techniques.
 
 ## Project Overview
