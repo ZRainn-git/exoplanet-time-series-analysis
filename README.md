@@ -91,7 +91,39 @@ This case highlights the importance of combining visual, statistical, and freque
 
 ## Example Results
 
-Add selected figures from the `figures/` folder here once the final filenames are chosen.
+### Selected Kepler Light Curves
+
+The four selected confirmed-exoplanet light curves exhibit substantially different levels of noise and periodic structure, motivating different analysis strategies for each target.
+
+![Selected Kepler light curves](figures/raw_kepler_light_curves.png)
+
+### Frequency-Domain Analysis
+
+FFT analysis was used as an initial diagnostic to identify dominant frequency components and compare the periodic structure of Exoplanets 4–7.
+
+![FFT comparison of Exoplanets 4–7](figures/fft_comparison_exoplanets_4_7.png)
+
+### Exoplanet 5 — Seasonal Decomposition
+
+For Exoplanet 5, seasonal decomposition was used to separate the repeating component from longer-term variations. Frequency analysis of the seasonal component produced an estimated period of approximately **6.01 hours**.
+
+![Exoplanet 5 seasonal decomposition](figures/exoplanet_5_seasonal_decomposition.png)
+
+### Exoplanet 6 — Time-Frequency Analysis
+
+Exoplanet 6 exhibited substantial noise without a clearly recoverable stable period. A Short-Time Fourier Transform (STFT) was therefore used to examine how its frequency content evolved with time and to investigate a localized transient feature.
+
+![Exoplanet 6 STFT spectrogram](figures/exoplanet_6_spectrogram.png)
+
+### Exoplanet 7 — Orbital Period Validation
+
+A direct FFT initially suggested a period of approximately **25.37 hours**, but this was inconsistent with the spacing of the major flux dips. Autocorrelation revealed a characteristic timescale of approximately **100 hours**, providing an independent estimate of the repeating signal.
+
+![Exoplanet 7 autocorrelation](figures/exoplanet_7_autocorrelation.png)
+
+Finally, phase folding at approximately **101.77 hours** aligned the repeating light-curve features, supporting the revised orbital-period estimate.
+
+![Exoplanet 7 phase-folded light curve](figures/exoplanet_7_phase_folded_light_curve.png)
 
 Example syntax:
 
