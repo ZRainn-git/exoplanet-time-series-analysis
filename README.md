@@ -153,22 +153,6 @@ exoTrain.csv
 exoTest.csv
 ```
 
-## Repository Structure
-
-```text
-Exoplanet-Time-Series/
-│
-├── README.md
-├── notebook/
-│   └── exoplanet_time_series_analysis.ipynb
-├── figures/
-│   └── analysis figures
-├── report/
-│   └── final_report.pdf
-└── data/
-    ├── exoTrain.csv
-    └── exoTest.csv
-```
 
 ## Tools and Libraries
 
